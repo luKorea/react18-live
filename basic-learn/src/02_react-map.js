@@ -6,16 +6,19 @@ class App extends React.Component {
     super()
     this.state = {
       message: 'Map数组展示',
-      movie: ['demo', 'info', 'page', 'hh']
+      movie: ['demo', 'info', 'page', 'hh'],
+      isActive: true
     }
   }
   handleChangeMessage = () => {
     this.setState({
-      message: 'Hello React'
+      message: 'Hello React',
     })
   }
   render() {
-    const {message, movie} = this.state
+    const {message, movie, isActive} = this.state
+    // 动态绑定类名
+    const className = `text btn ${isActive && 'active'}`
     return (
       <div>
        <h1>{message}</h1>
@@ -24,7 +27,8 @@ class App extends React.Component {
             movie.map((item, index) => <li key={index}>{item}</li>)
           }
         </ul>
-       <button onClick={() => this.handleChangeMessage()}>点击切换内容</button>
+       {/* class绑定 */}
+       <button className={className} onClick={() => this.handleChangeMessage()}>点击切换内容</button>
       </div>
     )
   }
