@@ -7,7 +7,6 @@ class App extends React.Component {
     this.state = {
       message: 'Map数组展示',
       movie: ['demo', 'info', 'page', 'hh'],
-      isActive: true
     }
   }
   handleChangeMessage = () => {
@@ -16,9 +15,7 @@ class App extends React.Component {
     })
   }
   render() {
-    const {message, movie, isActive} = this.state
-    // 动态绑定类名
-    const className = `text btn ${isActive && 'active'}`
+    const {message, movie} = this.state
     return (
       <div>
        <h1>{message}</h1>
@@ -27,8 +24,6 @@ class App extends React.Component {
             movie.map((item, index) => <li key={index}>{item}</li>)
           }
         </ul>
-       {/* class绑定 */}
-       <button className={className} onClick={() => this.handleChangeMessage()}>点击切换内容</button>
       </div>
     )
   }
