@@ -1,0 +1,42 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.title-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th {
+  background-color: #f3f6f9;
+  border: 1px solid #ebeef5;
+  padding: 15px;
+}
+td {
+  border: 1px solid #ebeef5;
+  padding: 15px;
+  color: #606266;
+}
+.m {
+  margin: 0 3px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.col {
+  color: #606266;
+  background-color: #fdf4ea;
+}
+.price {
+  text-align: left;
+}
