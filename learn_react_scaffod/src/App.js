@@ -1,23 +1,28 @@
 import './App.css';
+import LifeCycle from "./components/life_cycle";
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            isActive: true
+        }
+    }
+    removeComponent() {
+        this.setState({
+            isActive: !this.state.isActive
+        })
+    }
+    render() {
+        return (
+            <div className="App">
+                <button onClick={() => this.removeComponent()}>卸载组件</button>
+                {
+                    this.state.isActive && <LifeCycle />
+                }
+            </div>
+        );
+    }
 }
-
 export default App;
