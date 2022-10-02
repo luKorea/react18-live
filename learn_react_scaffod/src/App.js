@@ -1,10 +1,11 @@
 import './App.css';
 // import LifeCycle from "./components/life_cycle";
 import React from 'react'
+import ContentCp from './components/context_cp';
 // import Main from './components/props/main';
 // import TabControlWrap from './components/tab_control'
-import SlotComponent from './components/slot';
-import ScopeSlot from './components/scope_slot';
+// import SlotComponent from './components/slot';
+// import ScopeSlot from './components/scope_slot';
 
 class App extends React.Component {
     constructor() {
@@ -29,7 +30,8 @@ class App extends React.Component {
             // <Main />
             // <TabControlWrap></TabControlWrap>
             // <SlotComponent />
-            <ScopeSlot />
+            // <ScopeSlot />
+            <ContentCp />
         );
     }
 }
