@@ -1,0 +1,15 @@
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+}
+.nav-bar .left, .right {
+  width: 80px;
+}
+
+.nav-bar .center {
+  flex: 1;
+}
