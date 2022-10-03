@@ -2,7 +2,8 @@ import './App.css';
 // import LifeCycle from "./components/life_cycle";
 import React from 'react'
 // import ContentCp from './components/context_cp';
-import RefComponent from './components/RefComponent';
+// import RefComponent from './components/RefComponent';
+import ControlForm from './components/control_form';
 // import Main from './components/props/main';
 // import TabControlWrap from './components/tab_control'
 // import SlotComponent from './components/slot';
@@ -33,7 +34,8 @@ class App extends React.Component {
             // <SlotComponent />
             // <ScopeSlot />
             // <ContentCp />
-            <RefComponent />
+            // <RefComponent />
+            <ControlForm />
         );
     }
 }
