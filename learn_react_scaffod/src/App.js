@@ -3,7 +3,8 @@ import './App.css';
 import React from 'react'
 // import ContentCp from './components/context_cp';
 // import RefComponent from './components/RefComponent';
-import ControlForm from './components/control_form';
+// import ControlForm from './components/control_form';
+import FormSubmit from './components/FormSubmit';
 // import Main from './components/props/main';
 // import TabControlWrap from './components/tab_control'
 // import SlotComponent from './components/slot';
@@ -35,7 +36,8 @@ class App extends React.Component {
             // <ScopeSlot />
             // <ContentCp />
             // <RefComponent />
-            <ControlForm />
+            // <ControlForm />
+            <FormSubmit/>
         );
     }
 }
