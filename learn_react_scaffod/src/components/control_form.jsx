@@ -8,6 +8,7 @@ export class ControlForm extends PureComponent {
     }
   }
   changeData(e) {
+    console.log(e)
     this.setState({
       username: e.target.value
     })
