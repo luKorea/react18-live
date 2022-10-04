@@ -7,6 +7,7 @@ import React from 'react'
 // import FormSubmit from './components/FormSubmit';
 import HocComponents from './components/HocComponents';
 import CssStyle from './components/cssStyle';
+import ClassNamesComponent from './components/ClassNames';
 // import Main from './components/props/main';
 // import TabControlWrap from './components/tab_control'
 // import SlotComponent from './components/slot';
@@ -41,7 +42,8 @@ class App extends React.Component {
             // <ControlForm />
             // <FormSubmit/>
             // <HocComponents />
-            <CssStyle/>
+            // <CssStyle/>
+            <ClassNamesComponent />
         );
     }
 }
