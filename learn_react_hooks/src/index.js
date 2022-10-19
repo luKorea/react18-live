@@ -6,6 +6,8 @@ import store from "./store";
 import { HashRouter } from 'react-router-dom';
 import { ThemeContext, UserContext } from './context';
 
+import './index.css'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <Provider store={store}>
