@@ -1,6 +1,8 @@
 import {Link, useRoutes} from 'react-router-dom'
 import ContextAndReducer from './page/ContextAndReducer';
+import CustomHook from './page/CustomHook';
 import RefAndCallbackAndMemo from './page/RefAndCallbackAndMemo';
+import ReduxHook from './page/ReduxHook'
 import RefComponent from './page/RefComponent';
 import routes from './router/index'
 function App() {
@@ -13,6 +15,8 @@ function App() {
             <ContextAndReducer />
             <RefComponent/>
             <RefAndCallbackAndMemo/>
+            <ReduxHook />
+            <CustomHook />
         </div>
     );
 }

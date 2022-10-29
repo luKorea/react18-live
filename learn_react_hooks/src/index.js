@@ -4,7 +4,7 @@ import App from './App';
 import {Provider} from "react-redux";
 import store from "./store";
 import { HashRouter } from 'react-router-dom';
-import { ThemeContext, UserContext } from './context';
+import { ThemeContext, TokenContext, UserContext } from './context';
 
 import './index.css'
 
@@ -15,7 +15,9 @@ root.render(
             <Suspense>
                <ThemeContext.Provider value={{color: 'red', fontSize: '20px'}}>
                     <UserContext.Provider value={{name: 'korea'}}>
-                        <App/>
+                        <TokenContext.Provider value={'korealu-token'}>
+                            <App/>
+                        </TokenContext.Provider>
                     </UserContext.Provider>
                </ThemeContext.Provider>
             </Suspense>
